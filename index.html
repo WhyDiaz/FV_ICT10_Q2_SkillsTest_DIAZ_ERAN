@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <title>Non-Metal-Finder-For-The-Bradarian-Collective</title>
+    <style>
+    
+    footer {
+            background-color: #ffffff;
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0 24px 0;
+            margin-top: auto;
+        }
+
+    .navbar {
+            padding: 0.8rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            background-color: #ffffff;
+        }
+
+     .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+    #logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-left: 10px;
+            object-fit: cover;
+        }    
+
+    .nav-link {
+            color: var(--text-muted) !important;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+    .nav-link.active-page {
+            color: var(--brand-primary) !important;
+            font-weight: 700;
+        }
+
+    body {
+            font-family: cursive;
+            background-color: var(--bg-canvas);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image:url(https://i.pinimg.com/736x/61/60/ec/6160ec239ebd2be3136e3b6423c84c56.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+    .register-container {
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+    .btn-black {
+            background-color: #000;
+            color: white;
+            width: 100%;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            transition: 0.2s;
+        }
+
+     .pfp-wrapper { display: flex; justify-content: center; margin-bottom: 20px; }
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                The Bradarian Collective Club
+                <img src="https://i.pinimg.com/736x/61/60/ec/6160ec239ebd2be3136e3b6423c84c56.jpg" id="logo" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end show">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link.active-page" href="index.html">Non-Metal-Finder</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    <div class="register-container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Bradarian-Collective-Non-Metal-Finder-8300</h2>
+            <p class="text-muted">Find Non-Metals-For-The-Bradars</p>
+        </div>
+        
+        <div class="pfp-wrapper">
+            <img src="https://i.pinimg.com/736x/61/60/ec/6160ec239ebd2be3136e3b6423c84c56.jpg" alt="Logo" class="img-fluid rounded-circle" width="60">
+        </div>
+
+    <div class="container">
+        <h1>Non-Metal Information</h1>
+        <p>Enter a Non-Metal name to search</p>
+        <input type="text" id="element1" placeholder="Example: ">
+        <br>
+        <button py-click="search_element">Search</button>
+
+        <div class="result">
+            <h3>Showcase Result</h3>
+            <p><b>Element Name:</b><span id="Name"></span></p>
+            <p><b>Element Symbol:</b><span id="Symbol"></span></p>
+            <p><b>Atomic Number:</b><span id="AtomicNumber"></span></p>
+            <p><b>Atomic Mass:</b><span id="AtomicMass"></span></p>
+        </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <h6 class="fw-bold mb-2"></h6>
+                    <p class="text-muted small mb-3">
+                        For more information contact<br>
+                        Club Moderator: My Name
+                    </p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center text-muted small mb-0">© 2026 Bradarian Collective</p>
+        </div>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+</div>
+</body>
+</html>
